@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tripary</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+    <link type="text/css" href="Styles/styles.css" rel="stylesheet" />
+    <link type="text/css" href="Lib/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" />
+    <link type="text/css" href="Lib/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link type="text/css" href="Lib/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css" rel="stylesheet" />
+</head>
+<body onload="SetUpCamera();">
+    <div class="header">
+        <p>TRIPARY</p>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="NavigationPage.html">Home</a></li>
+            <li><a href="Compass.html">Compass</a></li>
+            <li><a class="active" href="Camera.html">Camera</a></li>
+            <li><a href="Geolocation.html">Geolocation</a></li>
+            <li><a href="History.html">History</a></li>
+        </ul>
+    </nav>
+
+        <div class="content" id="content">
+            <h2>Capture Those Moments So You Never Forget Them!</h2>
+            <input id="BtnCamera" type="button" value="Take A Picture!"/>
+        </div>
+    <div id="DivOutput"></div>
+
+
+    <script src="phonegap.js"></script>
+    <script src="Scripts/Camera.js"></script>
+    <script src="Lib/jquery-2.1.4.min.js"></script>
+    <script src="Lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
+
+</body>
+</html>

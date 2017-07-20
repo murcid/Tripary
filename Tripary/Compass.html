@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tripary</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+    <link type="text/css" href="Styles/styles.css" rel="stylesheet" />
+    <link type="text/css" href="Lib/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" />
+    <link type="text/css" href="Lib/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link type="text/css" href="Lib/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css" rel="stylesheet" />
+</head>
+<body onload="SetUpCompass();">
+    <div class="header">
+        <p>TRIPARY</p>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="NavigationPage.html">Home</a></li>
+            <li><a class="active" href="Compass.html">Compass</a></li>
+            <li><a href="Camera.html">Camera</a></li>
+            <li><a href="Geolocation.html">Geolocation</a></li>
+            <li><a href="History.html">History</a></li>
+        </ul>
+    </nav>
+    <div class="compassContent" id="content">
+        <br />
+        <br />
+        <div style="position:relative">
+            <img class="imgCompass" id="imgCompass" src="Images/compass.jpg" width="240" height="239" border="5" />
+            <img class="imgNeedle" id="imgNeedle" src="Images/needle.png" width="300" height="220" />
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h2>
+            Your Heading
+        </h2>
+            <input id="TbnHeading" type="text" readonly />
+        <br />
+        <br />
+        <input id="BtnCompass" type="button" value="Watch Heading" />
+    </div>
+
+    <script src="phonegap.js"></script>
+    <script src="Lib/jquery-2.1.4.min.js"></script>
+    <script src="Lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
+
+</body>
+</html>
